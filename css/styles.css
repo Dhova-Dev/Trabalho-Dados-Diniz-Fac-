@@ -1,0 +1,129 @@
+body, html {
+  height: 100%;
+  margin:  0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  overflow: hidden;
+}
+  
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#dice-options {
+  margin-bottom: 20px;
+}
+
+#dice-selector {
+  font-size: 24px;
+  padding: 10px;
+  border: 2px solid #ff6347;
+  border-radius: 10px;
+  background-color: #fffacd;
+  box-shadow: 3px 3px 0px #ffa07a;
+}
+
+#dice-roll {
+  font-size: 32px;
+  padding: 15px 30px;
+  border: 3px solid #ff6347;
+  border-radius: 10px;
+  background-color: #ffebcd;
+  cursor: pointer;
+  box-shadow: 5px 5px 0px #ffa07a;
+  transition: transform 0.2s;
+}
+
+#dice-roll:hover {
+  transform: scale(1.1);
+}
+
+#result {
+  font-size: 48px;
+  margin-top: 20px;
+}
+
+body.light {
+  background-color: #f0f8ff;
+  color: #000;
+}
+
+body.light #result {
+  color: #4682b4;
+  text-shadow: 2px 2px #ffa07a;
+}
+
+body.dark {
+  background-color: #312c2caa;
+  color: #fff;
+}
+
+body.dark #result {
+  color: aliceblue;
+  text-shadow: 2px 2px #ff6347;
+}
+
+body.high-contrast {
+  background-color: #000;
+  color: #fff;
+}
+
+body.high-contrast #result {
+  color: yellow;
+  text-shadow: 2px 2px #000;
+}
+
+body.high-contrast #dice-roll,
+body.high-contrast #dice-selector {
+  border: 3px solid yellow;
+  background-color: #000;
+  color: yellow;
+  box-shadow: none;
+}
+
+#theme {
+  font-size: 24px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border: 2px solid #ff6347;
+  border-radius: 10px;
+  background-color: #ffebcd;
+  cursor: pointer;
+  box-shadow: 3px 3px 0px #ffa07a;
+  transition: transform 0.2s;
+}
+
+#theme:hover {
+  transform: scale(1.1);
+}
+
+body.light #theme {
+  border: 2px solid #ff6347;
+  background-color: #ffebcd;
+  color: #000;
+}
+
+body.dark #theme {
+  border: 2px solid #ff6347;
+  background-color: #312c2caa;
+  color: #fff;
+}
+
+body.high-contrast #theme {
+  border: 3px solid yellow;
+  background-color: #000;
+  color: yellow;
+  box-shadow: none;
+}
+
+header {
+  font-size: 36px;
+  margin-top: 20px;
+  text-align: center;
+  color: #4682b4;
+  text-shadow: 2px 2px #ffa07a;
+}
