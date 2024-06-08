@@ -4,6 +4,7 @@ document.getElementById('dice-roll').addEventListener('click', function() {
     document.getElementById('result').innerText = 'Resultado : ' + result;
 });
 
+
 const themes = ['light', 'dark', 'high-contrast'];
 const themeEmojis = ['🌞', '🌜', '⚫'];
 let currentThemeIndex = 0;
